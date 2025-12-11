@@ -1,0 +1,328 @@
+/* --- Section 2: Container --- */
+.sec-2 {
+    display: flex;
+    
+    gap: 80px;
+   
+    background-color: wheat;
+    min-height: 80vh;
+}
+
+.sec-2-left {
+    width: 45%;
+}
+
+.sec-2-left .img {
+    position: relative;
+    width: 100%;
+}
+
+.training-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    display: block;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 40px;
+    right: -30px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    animation: floatCard 5s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+
+     50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+
+   
+}
+
+.trophy-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(251, 220, 220);
+    color: rgb(191, 27, 27);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.rate-text h3 {
+    
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+.rate-text p {
+    margin: 0;
+    font-size: 13px;
+    color: #6B7280;
+    font-weight: 500;
+}
+
+
+.sec-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 60px 8%;
+    background-color: white;
+    min-height: 40vh;
+
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    overflow: hidden;
+}
+
+
+.sec-2-left {
+    width: 45%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 100%;
+    height: 100%;
+    background-color: whitesmoke;
+    border-radius: 24px;
+    z-index: 0;
+    /* Behind the image */
+}
+
+.training-img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    display: block;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 40px;
+    right: -30px;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    z-index: 2;
+    animation: floatCard 5s ease-in-out infinite;
+}
+
+.trophy-icon {
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255, 225, 225);
+    color: rgb(241, 29, 10);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Badge Text */
+.rate-text h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #111827;
+}
+
+.rate-text p {
+    margin: 0;
+    font-size: 13px;
+    color: lightslategray;
+    font-weight: 500;
+}
+
+@keyframes floatCard {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+.sec-2-right {
+    width: 55%;
+}
+
+.pill-badge {
+    background-color: whitesmoke;
+    color: rgb(67, 116, 241);
+    border: 1px solid lightseagreen;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+/* Headings */
+.sec-2-right h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.purple-text {
+    background: linear-gradient(to right, red, rgba(0, 0, 0, 0.438));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+/* Description Text */
+.sec-2-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(103, 120, 136);
+    margin-bottom: 40px;
+}
+
+/* Feature Boxes */
+.features-row {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feature-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Icons styling */
+.f-icon-1 {
+    min-width: 40px;
+    height: 40px;
+    background-color: #EFF6FF;
+    color: rgb(53, 164, 207);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.f-icon-2 {
+    min-width: 40px;
+    height: 40px;
+    background-color: #e49564;
+    color: rgb(227, 83, 58);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+.f-text h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color:rgb(29, 29, 70);
+}
+
+.f-text p {
+    margin: 0;
+    font-size: 13px;
+    color: lightslategrey;
+    line-height: 1.4;
+}
+
+
+.btn-explore {
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 10px 4px 12px rgba(37, 100, 235, 0.637);
+    transition: all 0.3s ease-out;
+}
+
+.btn-explore:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/*  MOBILE RESPONSIVE */
+@media (max-width: 1024px) {
+    .sec-2 {
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 50px;
+        border-radius: 40px;
+    }
+
+    .sec-2-left,
+    .sec-2-right {
+        width: 100%;
+    }
+
+    .floating-card {
+        right: 0;
+        bottom: -25px;
+    }
+
+    .features-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sec-2-right h2 {
+        font-size: 32px;
+    }
+}

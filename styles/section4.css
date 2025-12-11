@@ -1,0 +1,107 @@
+
+.sec-4 {
+    background-color: #FFFFFF; 
+    color: #111827;            
+    padding: 50px;
+    text-align: center;
+}
+
+
+.sec-4-header {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.sec-4-header h2 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+.text-blue {
+    
+    background: linear-gradient(to right, #2563EB, #662d7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.sec-4-header p {
+    font-size: 18px;
+    color: #4B5563; 
+    line-height: 1.6;
+}
+
+
+.cards-1 {
+    display: flex;          
+    justify-content: center; 
+    gap: 20px;              
+    flex-wrap: wrap;       
+}
+
+.f-card {
+    background-color: #F9FAFB; 
+    border: 1px solid #E5E7EB; 
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 350px;              
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+
+.f-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.f-card:hover .icon-sq {
+    transform: rotate(15deg);
+    transition: transform 0.3s ease;
+}
+
+
+.icon-sq {
+    width: 55px;
+    height: 55px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.bg-red { background: linear-gradient(135deg, #EF4444, #DC2626); }
+.bg-blue { background: linear-gradient(135deg, #3B82F6, #2563EB); }
+.bg-green { background: linear-gradient(135deg, #10B981, #059669); }
+
+.f-card h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1F2937;
+}
+
+.f-card p {
+    font-size: 15px;
+    color: #6B7280;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+    .cards-1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .f-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
