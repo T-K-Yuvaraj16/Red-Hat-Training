@@ -88,6 +88,7 @@
 .footer-links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 60px;
     text-align: left;
 }

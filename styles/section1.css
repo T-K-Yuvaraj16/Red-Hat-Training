@@ -163,13 +163,26 @@
     animation: floatMain 6s ease-in-out infinite;
 }
 
+@keyframes floatMain {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+
 .floating-cloud {
     position: absolute;
     top: -5%;
     left: 0;
     width: 140px;
     z-index: 2;
-
+    opacity: 1;
     animation: moveLeftRight 6s ease-in-out infinite;
 }
 
@@ -193,31 +206,6 @@
 }
 
 
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-12px);
-    }
-}
-
-@keyframes floatMain {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-6px);
-    }
-}
-
-
 .floating-shield {
     position: absolute;
     bottom: 5%;
@@ -225,6 +213,7 @@
     width: 120px;
     z-index: 2;
     animation: shieldUpAndDown 5s ease-in-out infinite 1s;
+    border-radius: 30px;
 }
 
 .floating-shield img {
@@ -252,9 +241,8 @@
     top: 15%;
     right: -30px;
     z-index: 3;
-
+    opacity: 0.9;
     background: rgba(20, 20, 35, 0.65);
-    backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 12px 18px;
@@ -271,9 +259,21 @@
     bottom: 10%;
     right: -30px;
     z-index: 3;
+    opacity: 0.9;
     animation: float 7s ease-in-out infinite 1s;
 }
 
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
 
 .glass-card.data-card {
     background: rgba(20, 20, 35, 0.65);
@@ -289,8 +289,6 @@
     gap: 15px;
     text-align: center;
 }
-
-
 
 .icon-box {
     width: 35px;
@@ -333,31 +331,6 @@
     color: #F87171;
     font-size: 18px !important;
 }
-
-@keyframes float {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-12px);
-    }
-}
-
-@keyframes floatMain {
-
-    0%,
-    100% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-6px);
-    }
-}
-
 
 @media (max-width: 1024px) {
     .image-section {
